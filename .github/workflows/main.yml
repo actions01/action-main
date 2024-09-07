@@ -16,7 +16,7 @@ jobs:
         steps:
             - name: Adicionando Comentário
               id: comment_step
-              uses: actions01/composite@main
+              uses: actions01/action-docker@main
               with:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 issue-id: ${{ github.event.issue.number }}
